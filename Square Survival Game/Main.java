@@ -10,13 +10,13 @@ public class Main {
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         spaceGame game = new spaceGame();
 
-        frame.setSize(650,500);
+        frame.setSize(650,510);
         frame.add(game);
         frame.setVisible(true);
 
 
         //main loop of the program
-        Timer timer = new Timer(1, new ActionListener(){
+        Timer timer = new Timer(15, new ActionListener(){
             public void actionPerformed(ActionEvent e) {
                 game.repaint();
         
